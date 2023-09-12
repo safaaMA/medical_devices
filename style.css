@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.LeftLest {
+    width: 290px;
+    background: #0084ff;
+    text-align: -webkit-center;
+    height: 652px;
+    border-radius: 0 0 0 41px;
+    position: fixed;
+}
+
+.RightPage {
+    width: 79%;
+    margin: 0 286px 0 0;
+}
+
+.logo {
+    padding: 0;
+    background: #fcfcfce6;
+    text-align: center;
+}
+
+.logo img {
+    width: 154px;
+}
+
+ul {
+    padding: 16px 0px;
+}
+
+li {
+    margin: 13px 0px;
+    padding: 13px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.li-a1 {
+    margin: 0 12px;
+}
+
+.li-a2 {
+    margin: 0 25px;
+}
+
+.li-a3 {
+    margin: 0 45px;
+}
+
+.li-a4 {
+    margin: 0 39px;
+}
+
+.li-a5 {
+    margin: 0 11px;
+}
+
+.li-a6 {
+    margin: 0 33px;
+}
+
+.li-a7 {
+    margin: 0 31px;
+}
+
+i.fa-solid.fa-user-doctor.style\= {
+    color: #ffff;
+}
+
+.li-add {
+    border-top: 1px #ffffff4a solid;
+    margin: 0 26px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+
+.account {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+}
+
+.userimg {
+    width: 36px;
+    border-radius: 50%;
+    margin: 2px 10px;
+}
+
+h3.username {
+    font-family: 'Cairo';
+    color: #ffff;
+}
+
+.topshert {
+    background: #0084ff;
+    padding: 7.5px 0;
+    margin: 0 0 0 0;
+    border-radius: 60px 0px 0px 52px;
+}
+
+.title {
+    margin: 11px;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Cairo';
+    font-weight: 900;
+}
+
+.title {
+    margin: 11px 194px;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Cairo';
+    font-weight: 900;
+    border-bottom: 1px solid #0084ff4a;
+}
+
+.HosCart {
+    padding: 20px 25px 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.H-Cart {
+    width: 290px;
+    border-radius: 30px;
+    background: #000000;
+    box-shadow: 1px 1px 4px 0px black;
+    margin: 5px 11px;
+    transition: .3s;
+}
+
+.Img-Cart-H img {
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.ditels-cart {
+    text-align: end;
+    padding: 16px;
+}
+
+.ditels-cart h1 {
+    color: #fff;
+    font-family: 'Cairo';
+    font-size: 17px;
+}
+
+.ditels-cart p {
+    color: #fff;
+    font-size: 18px;
+    margin: 8px 0px;
+}
+
+.showDiv {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    background: #556b2fd6;
+    padding: 2px 69px;
+    border-radius: 15px;
+    transition: .5s;
+    z-index: 0;
+}
+
+.Img-Cart-H {
+    width: 100%;
+    margin: auto;
+}
+
+.containerCart {
+    text-align: center;
+    margin: 23px 0 11px 0;
+}
+
+.showDiv:hover {
+    background: #0084ff;
+
+}
+
+.list {
+    font-size: 26px;
+    width: 25px;
+    margin: 6px;
+    color: #fff;
+    display: none;
+}
+
+
+@media screen and (max-width: 688px) {
+    .LeftLest {
+        display: none;
+    }
+
+    .list {
+        display: block;
+        z-index: 10000;
+    }
+
+    .RightPage {
+        width: 100%;
+        margin: 0;
+    }
+
+    .title {
+        margin: 11px 7px;
+    }
+
+    .LeftLest {
+        width: 100%;
+        border-radius: 0 0 41px 41px;
+    }
+}
+
+.activve {
+    display: block;
+    z-index: 1000;
+}
+
+.colors {
+    color: #0084ff;
+}
+
+/* ------------------------------------------------------- */
+.reveal {
+    position: relative;
+    transform: translateY(144px);
+    opacity: 0.9;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* ----------------------------------------------اداره المستشفى------- */
+li.hosClass {
+    background: #ffffffc2;
+    border-bottom: 1px solid #00000070;
+}
+
+.AhosClass {
+    color: #000000;
+}
+
+.hid {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.main-row {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    margin: 23px 0px;
+    font-family: 'Cairo', sans-serif;
+}
+
+a.a-manag {
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+}
+
+a.a-manag.delete {
+    background: red;
+    padding: 0px 9px;
+    border-radius: 16px;
+}
+
+a.a-manag.edit {
+    background: #0084ff;
+    padding: 0px 9px;
+    border-radius: 16px;
+}
+
+.id {
+    margin: 0px -9px;
+}
+
+/* --------------------صفحة الاجهزه------------ */
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.iconhome {
+    margin: 0 11px;
+}
+
+.div-page {
+    width: 80%;
+    margin: auto;
+}
+
+.samp-div {
+    color: red;
+    font-family: 'Cairo';
+}
+
+.id2 {
+    margin: 0px -7px;
+}
+
+.seralnum {
+    color: #FF9800;
+    margin: 16px;
+}
+
+.ditels-cart .ditils-div {
+    text-align: end;
+    padding: 0 17px;
+}
+
+.H-Cart:hover {
+    box-shadow: 2px 0px 8px 0px #0084ff;
+}
+
+/* -----------فورم اضافه------------ */
+.name-add-h {
+    text-align: center;
+}
+
+.seccess,
+.error {
+    font-family: 'Cairo';
+    color: #24522c;
+    text-align: center;
+    padding: 10px;
+}
+
+.H {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.submit:hover {
+    background: #FF9800;
+    border: none;
+}
+
+input[type="text"] {
+    text-align: center;
+    width: 244px;
+    height: 40px;
+    border-radius: 17px;
+    border: 0.5px solid #0084ff;
+    font-size: 14px;
+    font-family: 'Cairo';
+}
+
+.submit {
+    width: 244px;
+    height: 40px;
+    border-radius: 17px;
+    border: 0.5px solid #0084ff;
+    font-size: 16px;
+    font-family: 'Cairo';
+    background: #0084ff;
+    cursor: pointer;
+    color: #ffff;
+    transition: .5s;
+}
+
+.add-pers {
+    text-align: end;
+}
+
+.add-pers-a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    background: #0084ff;
+    padding: 2px 6px;
+    border-radius: 43px 24px 11px 15px;
+    transition: .7s;
+    margin: 0 192px 0 0;
+}
+
+.add-pers-a:hover {
+    background: #ff9900c1;
+}
+
+a {
+    transition: .6s;
+}
+
+
+
+@media screen and (max-width: 688px) {
+    .add-pers-a {
+        text-decoration: none;
+        font-size: 15px;
+        font-family: 'Cairo', sans-serif;
+        color: #fff;
+        background: #0084ff;
+        border-radius: 35px 0px 0px 18px;
+        padding: 2px 6px;
+        margin: 0 0 0 0;
+    }
+}
+
+select#hosp {
+    text-align: center;
+    width: 244px;
+    height: 40px;
+    border-radius: 17px;
+    border: 0.5px solid #0084ff;
+    font-size: 14px;
+    font-family: 'Cairo';
+}
+
+label {
+    text-align: center;
+    width: 244px;
+    height: 40px;
+    border-radius: 17px;
+    border: 0.5px solid #0084ff;
+    font-size: 14px;
+    font-family: 'Cairo';
+    padding: 5px 0;
+}
+
+input[type="date"] {
+    text-align: center;
+    width: 244px;
+    height: 40px;
+    border-radius: 17px;
+    border: 0.5px solid #0084ff;
+    font-size: 14px;
+    font-family: 'Cairo';
+}
+
+.nameDevices {
+    display: flex;
+    justify-content: center;
+}
+
+.marg-input {
+    margin: 0 10px 17px 24px;
+}
+
+@media screen and (max-width: 545px) {
+
+    .nameDevices {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: baseline;
+        margin: 11px 0px;
+    }
+}
+
+/* ------------------------------------- */
+.Delete {
+    background: rgb(117 85 85);
+    padding: 0 17px;
+    border-radius: 3px;
+    color: #ffff;
+}
+
+.Edit {
+    background: #24522c;
+    padding: 0 20px;
+    border-radius: 3px;
+    color: #ffff;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    width: 100%;
+    direction: rtl;
+    font-family: 'Cairo';
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+    padding: .625em;
+    text-align: center;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.btnseNd {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 600px) {
+    .btnseNd {
+        flex-direction: column;
+    }
+    tr.DeleteTr {
+        font-size: 50px;
+    }
+
+    th.DeletTH {
+        letter-spacing: 0;
+    }
+
+    tr.DeleteTr {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    th.DeletTH {
+        letter-spacing: 0;
+        width: 104%;
+        padding: 0;
+        margin: 55px 0px;
+    }
+
+    input.Yas,
+    .No {
+        width: 0%;
+        height: 0%;
+        padding: 6px 50px 8px 76px;
+        font-size: 20px;
+    }
+
+    table {
+        border: 0;
+        margin: 0px 0px 90px 0px;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        font-size: .8em;
+        text-align: end;
+        justify-content: space-between;
+    }
+
+    table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+    td.tdcenter {
+        display: flex;
+        justify-content: center;
+    }
+
+    a.Delete.DeleteTable,
+    a.Edit.EditTable {
+        width: 100%;
+        text-align: center;
+        background: crimson;
+    }
+
+    .a.Edit.EditTable {
+        background-color: darkmagenta;
+    }
+
+    input#searchInput {
+        width: 88%;
+    }
+}
+
+.Yas {
+    width: 175px;
+    background-color: red;
+    height: 40px;
+    border-radius: 17px;
+    border: none;
+    font-size: 16px;
+    font-family: 'Cairo';
+    cursor: pointer;
+    color: #ffff;
+    transition: .5s;
+}
+
+a.No {
+    background: #0084ff;
+    padding: 4px 62px;
+    border-radius: 14px;
+
+}
+
+.DeleteR {
+    background-color: #fe00006b;
+    padding: 0px 9px;
+    border-radius: 16px;
+    color: #f8f8f8;
+    cursor: no-drop;
+}
+
+.t-th {
+    border-bottom: 1px solid;
+    padding: 10px 1px;
+
+    width: 65%;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Cairo', sans-serif;
+}
+
+.NumberDiv {
+    margin: 11px 0px;
+    text-align: -webkit-right;
+}
+
+span {
+    margin: 0 5px;
+    font-size: 20px;
+    color: blueviolet;
+}
+
+
+/* .NumberDiv.privetDiv {
+    margin: 2px 0px;
+    text-align: -webkit-right;
+    position: absolute;
+    top: 105px;
+    width: 100%;
+} */
+
+
+
+.NumberDiv.privetDiv .t-th {
+    width: 19%;
+    background: blueviolet;
+    color: #ffff;
+}
+
+.NumberDiv.privetDiv {
+    text-align: -webkit-right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+.spanN {
+    margin: 0 5px;
+    font-size: 20px;
+    color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+    .NumberDiv.privetDiv .t-th {
+        width: 100%;
+    }
+
+}
+
+.H-Cart.reveal.active {
+    margin: 9px 6px;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input#searchInput {
+    width: 50%;
+    margin: 16px 0px 15px 0px;
+}
+
+.SearchButton {
+    width: 30%;
+    height: 37px;
+    border: none;
+    z-index: 1000;
+    cursor: pointer;
+    background: #0084ff;
+    border-radius: 11px;
+    font-size: 19px;
+    font-family: 'Cairo';
+    color: #ffff;
+}
+
+a.PhotoDiv {
+    color: black;
+    transition: .5s;
+}
+
+a.PhotoDiv:hover {
+    color: #0084ff;
+}
+
+@media screen and (max-width: 600px) {
+
+    input#searchInput {
+        width: 88%;
+    }
+
+    .areok {
+
+        text-align: -webkit-center;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    a.No {
+        background: #0084ff;
+        border-radius: 14px;
+        padding: 8px 48px;
+    }
+}
+
+.sure {
+    position: absolute;
+    z-index: 1000;
+    margin: 184px auto;
+}
+
+.containtshoe {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #000000cc;
+    z-index: 4000000001;
+}
+
+.PhotpDivC {
+    width: 350px;
+    margin: 100px auto;
+    border: 4px solid;
+}
+
+img.PotoD {
+    width: 100%;
+}
+
+.photoDivace {
+    margin: 11px 6px;
+}
+
+.photoDivace a {
+    background: brown;
+    color: #ffff;
+    padding: 4px 55px;
+    border-radius: 14px;
+    margin: 0px;
+}
